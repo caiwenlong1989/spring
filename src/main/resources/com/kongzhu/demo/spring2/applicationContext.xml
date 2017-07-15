@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 默认构造方法创建 bean -->
+    <bean id="messageController" class="com.kongzhu.demo.spring2.MessageController">
+        <!-- setter 方法注入（装配）依赖 -->
+        <property name="messageService" ref="messageService"/>
+    </bean>
+
+    <!-- 默认构造方法创建 bean -->
+    <bean id="messageService" class="com.kongzhu.demo.spring2.MessageServiceImpl">
+        <!-- setter 方法注入（装配）依赖 -->
+        <property name="messageDAO" ref="messageDAO"/>
+    </bean>
+
+    <!-- 默认构造方法创建 bean -->
+    <bean id="messageDAO" class="com.kongzhu.demo.spring2.MessageDAOImpl"/>
+
+</beans>
