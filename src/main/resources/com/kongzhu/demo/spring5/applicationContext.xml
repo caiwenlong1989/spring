@@ -17,6 +17,4 @@
     <!-- 启用 AspectJ 自动代理 -->
     <aop:aspectj-autoproxy/>
 
-    <bean class="com.kongzhu.demo.spring5.MessageAOP"/>
-
 </beans>

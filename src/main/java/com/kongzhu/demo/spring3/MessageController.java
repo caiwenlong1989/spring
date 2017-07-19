@@ -3,7 +3,7 @@ package com.kongzhu.demo.spring3;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component // 使用该注解，将当前类作为Spring组件使用，并交由Spring管理
+@Component // 使用该注解，将当前类作为组件“component”使用，并交由Spring管理
 public class MessageController {
 
     /**
