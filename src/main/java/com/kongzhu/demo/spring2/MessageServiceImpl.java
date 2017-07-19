@@ -2,6 +2,9 @@ package com.kongzhu.demo.spring2;
 
 public class MessageServiceImpl implements MessageService {
 
+    /**
+     * 依赖的属性
+     */
     private MessageDAO messageDAO;
 
     /**

@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class MessageServiceImpl implements MessageService {
 
+    /**
+     * 依赖的属性
+     */
     private MessageDAO messageDAO;
 
     @Autowired

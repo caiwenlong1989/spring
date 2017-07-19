@@ -2,6 +2,9 @@ package com.kongzhu.demo.spring;
 
 public class MessageController {
 
+    /**
+     * 依赖的属性
+     */
     private MessageService messageService;
 
     /**
